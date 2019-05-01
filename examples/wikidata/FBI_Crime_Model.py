@@ -20,21 +20,7 @@ class FBI_Crime_Model():
             'from_row': '$row',
             'from_col': '$col'
         }
-        self.time_zone = {'alabama': -360, 'alaska': -540, 'arizona': -420, 'arkansas': -360, 'california': -480,
-                          'colorado': -420, 'connecticut': -300, 'delaware': -300, 'florida': -300, 'georgia': -300,
-                          'hawaii': -600,
-                          'idaho': -420, 'illinois': -360, 'indiana': -300, 'iowa': -360, 'kansas': -420,
-                          'kentucky': -300,
-                          'louisiana': -360, 'maine': -300, 'maryland': -300, 'massachusetts': -300, 'michigan': -300,
-                          'minnesota': -360,
-                          'mississippi': -360, 'missouri': -360, 'montana': -420, 'nebraska': -360, 'nevada': -480,
-                          'new-hampshire': -300, 'new-jersey': -300, 'new-mexico': -420, 'new-york': -300,
-                          'north-carolina': -300, 'north-dakota': -360, 'ohio': -300, 'oklahoma': -360, 'oregon': -480,
-                          'pennsylvania': -300,
-                          'rhode-island': -300, 'south-carolina': -300, 'south-dakota': -360, 'tennessee': -300,
-                          'texas': -360, 'utah': -420, 'vermont': -300, 'virginia': -300, 'washington': -480,
-                          'west-virginia': -300,
-                          'wisconsin': -360, 'wyoming': -420}
+
         self.county_QNode = dict()
 
         # hashmap for states and their abbrviate
