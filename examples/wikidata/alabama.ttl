@@ -1,0 +1,788 @@
+@prefix : <http://isi.edu/> .
+@prefix p: <http://www.wikidata.org/prop/> .
+@prefix pq: <http://www.wikidata.org/prop/qualifier/> .
+@prefix pqn: <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix pqv: <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix pr: <http://www.wikidata.org/prop/reference/> .
+@prefix prn: <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <http://www.wikidata.org/prop/reference/value/> .
+@prefix ps: <http://www.wikidata.org/prop/statement/> .
+@prefix psn: <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix psv: <http://www.wikidata.org/prop/statement/value/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wdno: <http://www.wikidata.org/prop/novalue/> .
+@prefix wdref: <http://www.wikidata.org/reference/> .
+@prefix wds: <http://www.wikidata.org/entity/statement/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix wdtn: <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix wdv: <http://www.wikidata.org/value/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+wd:C3001 a wikibase:Property ;
+    rdfs:label "violent crime offenses"@en ;
+    schema:description "number of violent crime offenses reported by the sheriff's office or county police department"@en ;
+    schema:name "violent crime offenses"@en ;
+    wikibase:claim p:C3001 ;
+    wikibase:directClaim wdt:C3001 ;
+    wikibase:directClaimNormalized wdtn:C3001 ;
+    wikibase:novalue wdno:C3001 ;
+    wikibase:propertyType wikibase:Quantity ;
+    wikibase:qualifier pq:C3001 ;
+    wikibase:qualifierValue pqv:C3001 ;
+    wikibase:qualifierValueNormalized pqn:C3001 ;
+    wikibase:reference pr:C3001 ;
+    wikibase:referenceValue prv:C3001 ;
+    wikibase:referenceValueNormalized prn:C3001 ;
+    wikibase:statementProperty ps:C3001 ;
+    wikibase:statementValue psv:C3001 ;
+    wikibase:statementValueNormalized psn:C3001 ;
+    skos:prefLabel "violent crime offenses"@en ;
+    p:P1629 wds:C3001-85c69e73-4bfd-46a2-b23c-c4b47eb9d905 ;
+    p:P31 wds:C3001-cd064731-abde-45f8-8018-f16b5c15504c .
+
+wd:C3002 a wikibase:Property ;
+    rdfs:label "murder and non-negligent manslaughter"@en ;
+    schema:description "number of murder and non-negligent manslaughter offenses reported by the sheriff's office or county police department"@en ;
+    schema:name "murder and non-negligent manslaughter"@en ;
+    wikibase:claim p:C3002 ;
+    wikibase:directClaim wdt:C3002 ;
+    wikibase:directClaimNormalized wdtn:C3002 ;
+    wikibase:novalue wdno:C3002 ;
+    wikibase:propertyType wikibase:Quantity ;
+    wikibase:qualifier pq:C3002 ;
+    wikibase:qualifierValue pqv:C3002 ;
+    wikibase:qualifierValueNormalized pqn:C3002 ;
+    wikibase:reference pr:C3002 ;
+    wikibase:referenceValue prv:C3002 ;
+    wikibase:referenceValueNormalized prn:C3002 ;
+    wikibase:statementProperty ps:C3002 ;
+    wikibase:statementValue psv:C3002 ;
+    wikibase:statementValueNormalized psn:C3002 ;
+    skos:prefLabel "murder and non-negligent manslaughter"@en ;
+    p:P1629 wds:C3002-1f319534-0841-4a69-a8db-f5fdf481c3de,
+        wds:C3002-ae516641-15ec-45bc-be5b-a504c37ba84c ;
+    p:P31 wds:C3002-bd8b63fe-0c68-4488-8890-dcdbbc39be1d .
+
+wd:C3003 a wikibase:Property ;
+    rdfs:label "Rape (revised definition)"@en ;
+    schema:description "number of rapes (revised definition) reported by the sheriff's office or county police department"@en ;
+    schema:name "Rape (revised definition)"@en ;
+    wikibase:claim p:C3003 ;
+    wikibase:directClaim wdt:C3003 ;
+    wikibase:directClaimNormalized wdtn:C3003 ;
+    wikibase:novalue wdno:C3003 ;
+    wikibase:propertyType wikibase:Quantity ;
+    wikibase:qualifier pq:C3003 ;
+    wikibase:qualifierValue pqv:C3003 ;
+    wikibase:qualifierValueNormalized pqn:C3003 ;
+    wikibase:reference pr:C3003 ;
+    wikibase:referenceValue prv:C3003 ;
+    wikibase:referenceValueNormalized prn:C3003 ;
+    wikibase:statementProperty ps:C3003 ;
+    wikibase:statementValue psv:C3003 ;
+    wikibase:statementValueNormalized psn:C3003 ;
+    skos:prefLabel "Rape (revised definition)"@en ;
+    p:P1629 wds:C3003-9e2e5570-6911-464e-84b4-f1e31599f3df ;
+    p:P31 wds:C3003-fb947b89-848c-40c1-aaf2-51e4ced70cf5 .
+
+wd:C3004 a wikibase:Property ;
+    rdfs:label "Rape (legacy definition)"@en ;
+    schema:description "number of rapes (legacy definition) reported by the sheriff's office or county police department"@en ;
+    schema:name "Rape (legacy definition)"@en ;
+    wikibase:claim p:C3004 ;
+    wikibase:directClaim wdt:C3004 ;
+    wikibase:directClaimNormalized wdtn:C3004 ;
+    wikibase:novalue wdno:C3004 ;
+    wikibase:propertyType wikibase:Quantity ;
+    wikibase:qualifier pq:C3004 ;
+    wikibase:qualifierValue pqv:C3004 ;
+    wikibase:qualifierValueNormalized pqn:C3004 ;
+    wikibase:reference pr:C3004 ;
+    wikibase:referenceValue prv:C3004 ;
+    wikibase:referenceValueNormalized prn:C3004 ;
+    wikibase:statementProperty ps:C3004 ;
+    wikibase:statementValue psv:C3004 ;
+    wikibase:statementValueNormalized psn:C3004 ;
+    skos:prefLabel "Rape (legacy definition)"@en ;
+    p:P1629 wds:C3004-f50af41d-069a-48fc-b5d1-3dcae9c164cd ;
+    p:P31 wds:C3004-a23ae342-ba99-40dd-bfe2-586452a3f03e .
+
+wd:C3005 a wikibase:Property ;
+    rdfs:label "Robbery"@en ;
+    schema:description "number of roberies reported by the sheriff's office or county police department"@en ;
+    schema:name "Robbery"@en ;
+    wikibase:claim p:C3005 ;
+    wikibase:directClaim wdt:C3005 ;
+    wikibase:directClaimNormalized wdtn:C3005 ;
+    wikibase:novalue wdno:C3005 ;
+    wikibase:propertyType wikibase:Quantity ;
+    wikibase:qualifier pq:C3005 ;
+    wikibase:qualifierValue pqv:C3005 ;
+    wikibase:qualifierValueNormalized pqn:C3005 ;
+    wikibase:reference pr:C3005 ;
+    wikibase:referenceValue prv:C3005 ;
+    wikibase:referenceValueNormalized prn:C3005 ;
+    wikibase:statementProperty ps:C3005 ;
+    wikibase:statementValue psv:C3005 ;
+    wikibase:statementValueNormalized psn:C3005 ;
+    skos:prefLabel "Robbery"@en ;
+    p:P1629 wds:C3005-dea15640-ae13-45de-8ef8-305e827db2fd ;
+    p:P31 wds:C3005-aa3a1eec-8d61-4a35-83e9-3d4b3c508237 .
+
+wd:C3006 a wikibase:Property ;
+    rdfs:label "Aggravated assault"@en ;
+    schema:description "number of aggravated assaults reported by the sheriff's office or county police department"@en ;
+    schema:name "Aggravated assault"@en ;
+    wikibase:claim p:C3006 ;
+    wikibase:directClaim wdt:C3006 ;
+    wikibase:directClaimNormalized wdtn:C3006 ;
+    wikibase:novalue wdno:C3006 ;
+    wikibase:propertyType wikibase:Quantity ;
+    wikibase:qualifier pq:C3006 ;
+    wikibase:qualifierValue pqv:C3006 ;
+    wikibase:qualifierValueNormalized pqn:C3006 ;
+    wikibase:reference pr:C3006 ;
+    wikibase:referenceValue prv:C3006 ;
+    wikibase:referenceValueNormalized prn:C3006 ;
+    wikibase:statementProperty ps:C3006 ;
+    wikibase:statementValue psv:C3006 ;
+    wikibase:statementValueNormalized psn:C3006 ;
+    skos:prefLabel "Aggravated assault"@en ;
+    p:P1629 wds:C3006-2d31050f-2a87-43ae-99e4-3c4550c1ecda,
+        wds:C3006-448d4527-41ed-4bcc-8073-41aa4cbf4be1 ;
+    p:P31 wds:C3006-15132ba8-17bd-40d0-8465-968ff0435bf8 .
+
+wd:C3007 a wikibase:Property ;
+    rdfs:label "Property crime"@en ;
+    schema:description "number of property crimes reported by the sheriff's office or county police department"@en ;
+    schema:name "Property crime"@en ;
+    wikibase:claim p:C3007 ;
+    wikibase:directClaim wdt:C3007 ;
+    wikibase:directClaimNormalized wdtn:C3007 ;
+    wikibase:novalue wdno:C3007 ;
+    wikibase:propertyType wikibase:Quantity ;
+    wikibase:qualifier pq:C3007 ;
+    wikibase:qualifierValue pqv:C3007 ;
+    wikibase:qualifierValueNormalized pqn:C3007 ;
+    wikibase:reference pr:C3007 ;
+    wikibase:referenceValue prv:C3007 ;
+    wikibase:referenceValueNormalized prn:C3007 ;
+    wikibase:statementProperty ps:C3007 ;
+    wikibase:statementValue psv:C3007 ;
+    wikibase:statementValueNormalized psn:C3007 ;
+    skos:prefLabel "Property crime"@en ;
+    p:P1629 wds:C3007-7cccff28-10bf-4dca-a71c-e06df3916a41 ;
+    p:P31 wds:C3007-d2a88cb4-3116-4236-a3f9-962e7cb9180a .
+
+wd:C3008 a wikibase:Property ;
+    rdfs:label "Burglary"@en ;
+    schema:description "number of Burglaries reported by the sheriff's office or county police department"@en ;
+    schema:name "Burglary"@en ;
+    wikibase:claim p:C3008 ;
+    wikibase:directClaim wdt:C3008 ;
+    wikibase:directClaimNormalized wdtn:C3008 ;
+    wikibase:novalue wdno:C3008 ;
+    wikibase:propertyType wikibase:Quantity ;
+    wikibase:qualifier pq:C3008 ;
+    wikibase:qualifierValue pqv:C3008 ;
+    wikibase:qualifierValueNormalized pqn:C3008 ;
+    wikibase:reference pr:C3008 ;
+    wikibase:referenceValue prv:C3008 ;
+    wikibase:referenceValueNormalized prn:C3008 ;
+    wikibase:statementProperty ps:C3008 ;
+    wikibase:statementValue psv:C3008 ;
+    wikibase:statementValueNormalized psn:C3008 ;
+    skos:prefLabel "Burglary"@en ;
+    p:P1629 wds:C3008-3f757268-8163-41e4-8cfe-4c2454f5b283 ;
+    p:P31 wds:C3008-1521f5ee-f190-428f-950a-d7749e535caf .
+
+wd:C3009 a wikibase:Property ;
+    rdfs:label "Larceny-theft"@en ;
+    schema:description "number of Larceny-theft reported by the sheriff's office or county police department"@en ;
+    schema:name "Larceny-theft"@en ;
+    wikibase:claim p:C3009 ;
+    wikibase:directClaim wdt:C3009 ;
+    wikibase:directClaimNormalized wdtn:C3009 ;
+    wikibase:novalue wdno:C3009 ;
+    wikibase:propertyType wikibase:Quantity ;
+    wikibase:qualifier pq:C3009 ;
+    wikibase:qualifierValue pqv:C3009 ;
+    wikibase:qualifierValueNormalized pqn:C3009 ;
+    wikibase:reference pr:C3009 ;
+    wikibase:referenceValue prv:C3009 ;
+    wikibase:referenceValueNormalized prn:C3009 ;
+    wikibase:statementProperty ps:C3009 ;
+    wikibase:statementValue psv:C3009 ;
+    wikibase:statementValueNormalized psn:C3009 ;
+    skos:prefLabel "Larceny-theft"@en ;
+    p:P1629 wds:C3009-45a6025d-df46-4747-a305-7982b6b55bb0,
+        wds:C3009-499f1fa5-fdeb-4c99-8627-72b108286899 ;
+    p:P31 wds:C3009-4ca3a001-9d89-459e-bb42-209457fba976 .
+
+wd:C3010 a wikibase:Property ;
+    rdfs:label "Motor vehicle theft"@en ;
+    schema:description "number of Motor vehicle thefts reported by the sheriff's office or county police department"@en ;
+    schema:name "Motor vehicle theft"@en ;
+    wikibase:claim p:C3010 ;
+    wikibase:directClaim wdt:C3010 ;
+    wikibase:directClaimNormalized wdtn:C3010 ;
+    wikibase:novalue wdno:C3010 ;
+    wikibase:propertyType wikibase:Quantity ;
+    wikibase:qualifier pq:C3010 ;
+    wikibase:qualifierValue pqv:C3010 ;
+    wikibase:qualifierValueNormalized pqn:C3010 ;
+    wikibase:reference pr:C3010 ;
+    wikibase:referenceValue prv:C3010 ;
+    wikibase:referenceValueNormalized prn:C3010 ;
+    wikibase:statementProperty ps:C3010 ;
+    wikibase:statementValue psv:C3010 ;
+    wikibase:statementValueNormalized psn:C3010 ;
+    skos:prefLabel "Motor vehicle theft"@en ;
+    p:P1629 wds:C3010-6238d497-ea33-4141-9240-8bad491b483a,
+        wds:C3010-dceee35d-9e03-4493-827f-1ad936d4ae84 ;
+    p:P31 wds:C3010-c18a22db-0f11-4933-99a5-5f73a96d3a0b .
+
+wd:C3011 a wikibase:Property ;
+    rdfs:label "Arson"@en ;
+    schema:description "number of arsons reported by the sheriff's office or county police department"@en ;
+    schema:name "Arson"@en ;
+    wikibase:claim p:C3011 ;
+    wikibase:directClaim wdt:C3011 ;
+    wikibase:directClaimNormalized wdtn:C3011 ;
+    wikibase:novalue wdno:C3011 ;
+    wikibase:propertyType wikibase:Quantity ;
+    wikibase:qualifier pq:C3011 ;
+    wikibase:qualifierValue pqv:C3011 ;
+    wikibase:qualifierValueNormalized pqn:C3011 ;
+    wikibase:reference pr:C3011 ;
+    wikibase:referenceValue prv:C3011 ;
+    wikibase:referenceValueNormalized prn:C3011 ;
+    wikibase:statementProperty ps:C3011 ;
+    wikibase:statementValue psv:C3011 ;
+    wikibase:statementValueNormalized psn:C3011 ;
+    skos:prefLabel "Arson"@en ;
+    p:P1629 wds:C3011-5b68e37c-5f36-4a41-9b4f-f4985dbd9a23 ;
+    p:P31 wds:C3011-01cd6939-156b-416d-ad79-a55bd28bdebd .
+
+wd:Q156163 a wikibase:Item ;
+    p:C3001 wds:Q156163-81719ed2-ec64-4c6e-97bc-7aa532861072 ;
+    p:C3002 wds:Q156163-48425f43-8019-4d09-9f83-617b423195db ;
+    p:C3003 wds:Q156163-22aaae20-1a0a-4a73-8155-ababb1f6a264 ;
+    p:C3005 wds:Q156163-bd7d307f-a5c4-4cd0-878d-fe0124a817e7 ;
+    p:C3006 wds:Q156163-c2025fe6-d20a-4bf0-9b1f-180238213b1d ;
+    p:C3007 wds:Q156163-a4a6e973-4547-4fcb-ba72-051ad285e88d ;
+    p:C3008 wds:Q156163-fcc59c9b-4739-42a1-aa1c-af0994f8678d ;
+    p:C3009 wds:Q156163-b1f03208-a387-4234-80be-7365fd858e26 ;
+    p:C3010 wds:Q156163-c1492602-10bf-4d20-9114-40b2a7aed182 .
+
+wd:Q156168 a wikibase:Item ;
+    p:C3001 wds:Q156168-92c781f8-9b38-45f4-8302-93367147c293 ;
+    p:C3002 wds:Q156168-3f6a2b49-4c21-4bac-8b75-c56a958a7538 ;
+    p:C3003 wds:Q156168-4ce3a0d8-380a-44cb-aad9-223b46738926 ;
+    p:C3005 wds:Q156168-9c1b477a-5cd3-4d57-a6a7-28d735b75a4d ;
+    p:C3006 wds:Q156168-438e1b6c-3653-4f88-8a02-88359314ec51 ;
+    p:C3007 wds:Q156168-2362d766-1a07-4cb7-8e41-917e19a26d47 ;
+    p:C3008 wds:Q156168-3905bee1-57cb-4b5d-ab59-28edfdbb4aeb ;
+    p:C3009 wds:Q156168-42492a45-fe30-45f4-93ca-668a7dd490c3 ;
+    p:C3010 wds:Q156168-cfc883f0-4906-4fd2-b7d1-30389917e7a1 .
+
+wd:Q461204 a wikibase:Item ;
+    p:C3001 wds:Q461204-c9718006-63bb-4aea-9137-ba45669a3a50 ;
+    p:C3002 wds:Q461204-87d63b41-9b22-493f-bd9a-58abb0025e9d ;
+    p:C3003 wds:Q461204-0503a884-138f-4c0c-8187-031d9b4896d6 ;
+    p:C3005 wds:Q461204-e6bf2500-46f5-4166-b6fa-3383006e566e ;
+    p:C3006 wds:Q461204-72028df2-09ec-49b5-bc7c-885ff7b04b9e ;
+    p:C3007 wds:Q461204-84ef5ced-3331-491c-bee9-2105921a0672 ;
+    p:C3008 wds:Q461204-82b75dad-05ff-4c42-8f59-62433e6092c6 ;
+    p:C3009 wds:Q461204-78ab6196-7fe9-4693-aeca-ee3f803b3b7d ;
+    p:C3010 wds:Q461204-54424a4b-e017-42cd-9414-9f41b1408bd2 .
+
+wds:C3001-85c69e73-4bfd-46a2-b23c-c4b47eb9d905 a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P1629 wd:Q1520311 .
+
+wds:C3001-cd064731-abde-45f8-8018-f16b5c15504c a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P31 wd:D1001 .
+
+wds:C3002-1f319534-0841-4a69-a8db-f5fdf481c3de a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P1629 wd:Q1295558 .
+
+wds:C3002-ae516641-15ec-45bc-be5b-a504c37ba84c a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P1629 wd:Q132821 .
+
+wds:C3002-bd8b63fe-0c68-4488-8890-dcdbbc39be1d a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P31 wd:D1001 .
+
+wds:C3003-9e2e5570-6911-464e-84b4-f1e31599f3df a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P1629 wd:Q47092 .
+
+wds:C3003-fb947b89-848c-40c1-aaf2-51e4ced70cf5 a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P31 wd:D1001 .
+
+wds:C3004-a23ae342-ba99-40dd-bfe2-586452a3f03e a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P31 wd:D1001 .
+
+wds:C3004-f50af41d-069a-48fc-b5d1-3dcae9c164cd a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P1629 wd:Q47092 .
+
+wds:C3005-aa3a1eec-8d61-4a35-83e9-3d4b3c508237 a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P31 wd:D1001 .
+
+wds:C3005-dea15640-ae13-45de-8ef8-305e827db2fd a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P1629 wd:Q53706 .
+
+wds:C3006-15132ba8-17bd-40d0-8465-968ff0435bf8 a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P31 wd:D1001 .
+
+wds:C3006-2d31050f-2a87-43ae-99e4-3c4550c1ecda a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P1629 wd:Q365680 .
+
+wds:C3006-448d4527-41ed-4bcc-8073-41aa4cbf4be1 a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P1629 wd:Q81672 .
+
+wds:C3007-7cccff28-10bf-4dca-a71c-e06df3916a41 a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P1629 wd:Q857984 .
+
+wds:C3007-d2a88cb4-3116-4236-a3f9-962e7cb9180a a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P31 wd:D1001 .
+
+wds:C3008-1521f5ee-f190-428f-950a-d7749e535caf a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P31 wd:D1001 .
+
+wds:C3008-3f757268-8163-41e4-8cfe-4c2454f5b283 a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P1629 wd:Q329425 .
+
+wds:C3009-45a6025d-df46-4747-a305-7982b6b55bb0 a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P1629 wd:Q2727213 .
+
+wds:C3009-499f1fa5-fdeb-4c99-8627-72b108286899 a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P1629 wd:Q2485381 .
+
+wds:C3009-4ca3a001-9d89-459e-bb42-209457fba976 a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P31 wd:D1001 .
+
+wds:C3010-6238d497-ea33-4141-9240-8bad491b483a a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P1629 wd:Q2727213 .
+
+wds:C3010-c18a22db-0f11-4933-99a5-5f73a96d3a0b a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P31 wd:D1001 .
+
+wds:C3010-dceee35d-9e03-4493-827f-1ad936d4ae84 a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P1629 wd:Q548007 .
+
+wds:C3011-01cd6939-156b-416d-ad79-a55bd28bdebd a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P31 wd:D1001 .
+
+wds:C3011-5b68e37c-5f36-4a41-9b4f-f4985dbd9a23 a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P1629 wd:Q327541 .
+
+wds:D1001-88bda137-6953-4f6a-b36d-ce88ccc28145 a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P1269 wd:Q83267 .
+
+wds:D1001-ce04653e-cd9d-4512-a3db-62d5e90c88bd a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P279 wd:Q22984475 .
+
+wds:Q156163-22aaae20-1a0a-4a73-8155-ababb1f6a264 a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e9394f1-5b7e-4327-bd9e-acd3a7fb4129 ;
+    pq:P585 "2016-01-01"^^xsd:date ;
+    pqv:P585 wdv:Timec2016cQc9c0 ;
+    ps:C3003 5.0 ;
+    psn:C3003 wdv:Quantityc5c0c0cD ;
+    psv:C3003 wdv:Quantityc5c0c0cD .
+
+wds:Q156163-48425f43-8019-4d09-9f83-617b423195db a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e9394f1-5b7e-4327-bd9e-acd3a7fb4129 ;
+    pq:P585 "2016-01-01"^^xsd:date ;
+    pqv:P585 wdv:Timec2016cQc9c0 ;
+    ps:C3002 1.0 ;
+    psn:C3002 wdv:Quantityc1c0c0cD ;
+    psv:C3002 wdv:Quantityc1c0c0cD .
+
+wds:Q156163-81719ed2-ec64-4c6e-97bc-7aa532861072 a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e9394f1-5b7e-4327-bd9e-acd3a7fb4129 ;
+    pq:P585 "2016-01-01"^^xsd:date ;
+    pqv:P585 wdv:Timec2016cQc9c0 ;
+    ps:C3001 127.0 ;
+    psn:C3001 wdv:Quantityc127c0c0cD ;
+    psv:C3001 wdv:Quantityc127c0c0cD .
+
+wds:Q156163-a4a6e973-4547-4fcb-ba72-051ad285e88d a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e9394f1-5b7e-4327-bd9e-acd3a7fb4129 ;
+    pq:P585 "2016-01-01"^^xsd:date ;
+    pqv:P585 wdv:Timec2016cQc9c0 ;
+    ps:C3007 613.0 ;
+    psn:C3007 wdv:Quantityc613c0c0cD ;
+    psv:C3007 wdv:Quantityc613c0c0cD .
+
+wds:Q156163-b1f03208-a387-4234-80be-7365fd858e26 a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e9394f1-5b7e-4327-bd9e-acd3a7fb4129 ;
+    pq:P585 "2016-01-01"^^xsd:date ;
+    pqv:P585 wdv:Timec2016cQc9c0 ;
+    ps:C3009 342.0 ;
+    psn:C3009 wdv:Quantityc342c0c0cD ;
+    psv:C3009 wdv:Quantityc342c0c0cD .
+
+wds:Q156163-bd7d307f-a5c4-4cd0-878d-fe0124a817e7 a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e9394f1-5b7e-4327-bd9e-acd3a7fb4129 ;
+    pq:P585 "2016-01-01"^^xsd:date ;
+    pqv:P585 wdv:Timec2016cQc9c0 ;
+    ps:C3005 23.0 ;
+    psn:C3005 wdv:Quantityc23c0c0cD ;
+    psv:C3005 wdv:Quantityc23c0c0cD .
+
+wds:Q156163-c1492602-10bf-4d20-9114-40b2a7aed182 a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e9394f1-5b7e-4327-bd9e-acd3a7fb4129 ;
+    pq:P585 "2016-01-01"^^xsd:date ;
+    pqv:P585 wdv:Timec2016cQc9c0 ;
+    ps:C3010 42.0 ;
+    psn:C3010 wdv:Quantityc42c0c0cD ;
+    psv:C3010 wdv:Quantityc42c0c0cD .
+
+wds:Q156163-c2025fe6-d20a-4bf0-9b1f-180238213b1d a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e9394f1-5b7e-4327-bd9e-acd3a7fb4129 ;
+    pq:P585 "2016-01-01"^^xsd:date ;
+    pqv:P585 wdv:Timec2016cQc9c0 ;
+    ps:C3006 98.0 ;
+    psn:C3006 wdv:Quantityc98c0c0cD ;
+    psv:C3006 wdv:Quantityc98c0c0cD .
+
+wds:Q156163-fcc59c9b-4739-42a1-aa1c-af0994f8678d a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e9394f1-5b7e-4327-bd9e-acd3a7fb4129 ;
+    pq:P585 "2016-01-01"^^xsd:date ;
+    pqv:P585 wdv:Timec2016cQc9c0 ;
+    ps:C3008 229.0 ;
+    psn:C3008 wdv:Quantityc229c0c0cD ;
+    psv:C3008 wdv:Quantityc229c0c0cD .
+
+wds:Q156168-2362d766-1a07-4cb7-8e41-917e19a26d47 a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e9394f1-5b7e-4327-bd9e-acd3a7fb4129 ;
+    pq:P585 "2016-01-01"^^xsd:date ;
+    pqv:P585 wdv:Timec2016cQc9c0 ;
+    ps:C3007 429.0 ;
+    psn:C3007 wdv:Quantityc429c0c0cD ;
+    psv:C3007 wdv:Quantityc429c0c0cD .
+
+wds:Q156168-3905bee1-57cb-4b5d-ab59-28edfdbb4aeb a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e9394f1-5b7e-4327-bd9e-acd3a7fb4129 ;
+    pq:P585 "2016-01-01"^^xsd:date ;
+    pqv:P585 wdv:Timec2016cQc9c0 ;
+    ps:C3008 146.0 ;
+    psn:C3008 wdv:Quantityc146c0c0cD ;
+    psv:C3008 wdv:Quantityc146c0c0cD .
+
+wds:Q156168-3f6a2b49-4c21-4bac-8b75-c56a958a7538 a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e9394f1-5b7e-4327-bd9e-acd3a7fb4129 ;
+    pq:P585 "2016-01-01"^^xsd:date ;
+    pqv:P585 wdv:Timec2016cQc9c0 ;
+    ps:C3002 1.0 ;
+    psn:C3002 wdv:Quantityc1c0c0cD ;
+    psv:C3002 wdv:Quantityc1c0c0cD .
+
+wds:Q156168-42492a45-fe30-45f4-93ca-668a7dd490c3 a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e9394f1-5b7e-4327-bd9e-acd3a7fb4129 ;
+    pq:P585 "2016-01-01"^^xsd:date ;
+    pqv:P585 wdv:Timec2016cQc9c0 ;
+    ps:C3009 233.0 ;
+    psn:C3009 wdv:Quantityc233c0c0cD ;
+    psv:C3009 wdv:Quantityc233c0c0cD .
+
+wds:Q156168-438e1b6c-3653-4f88-8a02-88359314ec51 a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e9394f1-5b7e-4327-bd9e-acd3a7fb4129 ;
+    pq:P585 "2016-01-01"^^xsd:date ;
+    pqv:P585 wdv:Timec2016cQc9c0 ;
+    ps:C3006 52.0 ;
+    psn:C3006 wdv:Quantityc52c0c0cD ;
+    psv:C3006 wdv:Quantityc52c0c0cD .
+
+wds:Q156168-4ce3a0d8-380a-44cb-aad9-223b46738926 a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e9394f1-5b7e-4327-bd9e-acd3a7fb4129 ;
+    pq:P585 "2016-01-01"^^xsd:date ;
+    pqv:P585 wdv:Timec2016cQc9c0 ;
+    ps:C3003 12.0 ;
+    psn:C3003 wdv:Quantityc12c0c0cD ;
+    psv:C3003 wdv:Quantityc12c0c0cD .
+
+wds:Q156168-92c781f8-9b38-45f4-8302-93367147c293 a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e9394f1-5b7e-4327-bd9e-acd3a7fb4129 ;
+    pq:P585 "2016-01-01"^^xsd:date ;
+    pqv:P585 wdv:Timec2016cQc9c0 ;
+    ps:C3001 73.0 ;
+    psn:C3001 wdv:Quantityc73c0c0cD ;
+    psv:C3001 wdv:Quantityc73c0c0cD .
+
+wds:Q156168-9c1b477a-5cd3-4d57-a6a7-28d735b75a4d a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e9394f1-5b7e-4327-bd9e-acd3a7fb4129 ;
+    pq:P585 "2016-01-01"^^xsd:date ;
+    pqv:P585 wdv:Timec2016cQc9c0 ;
+    ps:C3005 8.0 ;
+    psn:C3005 wdv:Quantityc8c0c0cD ;
+    psv:C3005 wdv:Quantityc8c0c0cD .
+
+wds:Q156168-cfc883f0-4906-4fd2-b7d1-30389917e7a1 a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e9394f1-5b7e-4327-bd9e-acd3a7fb4129 ;
+    pq:P585 "2016-01-01"^^xsd:date ;
+    pqv:P585 wdv:Timec2016cQc9c0 ;
+    ps:C3010 50.0 ;
+    psn:C3010 wdv:Quantityc50c0c0cD ;
+    psv:C3010 wdv:Quantityc50c0c0cD .
+
+wds:Q461204-0503a884-138f-4c0c-8187-031d9b4896d6 a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e9394f1-5b7e-4327-bd9e-acd3a7fb4129 ;
+    pq:P585 "2016-01-01"^^xsd:date ;
+    pqv:P585 wdv:Timec2016cQc9c0 ;
+    ps:C3003 0.0 ;
+    psn:C3003 wdv:Quantityc0c0c0cD ;
+    psv:C3003 wdv:Quantityc0c0c0cD .
+
+wds:Q461204-54424a4b-e017-42cd-9414-9f41b1408bd2 a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e9394f1-5b7e-4327-bd9e-acd3a7fb4129 ;
+    pq:P585 "2016-01-01"^^xsd:date ;
+    pqv:P585 wdv:Timec2016cQc9c0 ;
+    ps:C3010 3.0 ;
+    psn:C3010 wdv:Quantityc3c0c0cD ;
+    psv:C3010 wdv:Quantityc3c0c0cD .
+
+wds:Q461204-72028df2-09ec-49b5-bc7c-885ff7b04b9e a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e9394f1-5b7e-4327-bd9e-acd3a7fb4129 ;
+    pq:P585 "2016-01-01"^^xsd:date ;
+    pqv:P585 wdv:Timec2016cQc9c0 ;
+    ps:C3006 0.0 ;
+    psn:C3006 wdv:Quantityc0c0c0cD ;
+    psv:C3006 wdv:Quantityc0c0c0cD .
+
+wds:Q461204-78ab6196-7fe9-4693-aeca-ee3f803b3b7d a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e9394f1-5b7e-4327-bd9e-acd3a7fb4129 ;
+    pq:P585 "2016-01-01"^^xsd:date ;
+    pqv:P585 wdv:Timec2016cQc9c0 ;
+    ps:C3009 14.0 ;
+    psn:C3009 wdv:Quantityc14c0c0cD ;
+    psv:C3009 wdv:Quantityc14c0c0cD .
+
+wds:Q461204-82b75dad-05ff-4c42-8f59-62433e6092c6 a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e9394f1-5b7e-4327-bd9e-acd3a7fb4129 ;
+    pq:P585 "2016-01-01"^^xsd:date ;
+    pqv:P585 wdv:Timec2016cQc9c0 ;
+    ps:C3008 20.0 ;
+    psn:C3008 wdv:Quantityc20c0c0cD ;
+    psv:C3008 wdv:Quantityc20c0c0cD .
+
+wds:Q461204-84ef5ced-3331-491c-bee9-2105921a0672 a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e9394f1-5b7e-4327-bd9e-acd3a7fb4129 ;
+    pq:P585 "2016-01-01"^^xsd:date ;
+    pqv:P585 wdv:Timec2016cQc9c0 ;
+    ps:C3007 37.0 ;
+    psn:C3007 wdv:Quantityc37c0c0cD ;
+    psv:C3007 wdv:Quantityc37c0c0cD .
+
+wds:Q461204-87d63b41-9b22-493f-bd9a-58abb0025e9d a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e9394f1-5b7e-4327-bd9e-acd3a7fb4129 ;
+    pq:P585 "2016-01-01"^^xsd:date ;
+    pqv:P585 wdv:Timec2016cQc9c0 ;
+    ps:C3002 0.0 ;
+    psn:C3002 wdv:Quantityc0c0c0cD ;
+    psv:C3002 wdv:Quantityc0c0c0cD .
+
+wds:Q461204-c9718006-63bb-4aea-9137-ba45669a3a50 a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e9394f1-5b7e-4327-bd9e-acd3a7fb4129 ;
+    pq:P585 "2016-01-01"^^xsd:date ;
+    pqv:P585 wdv:Timec2016cQc9c0 ;
+    ps:C3001 0.0 ;
+    psn:C3001 wdv:Quantityc0c0c0cD ;
+    psv:C3001 wdv:Quantityc0c0c0cD .
+
+wds:Q461204-e6bf2500-46f5-4166-b6fa-3383006e566e a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom wdref:2e9394f1-5b7e-4327-bd9e-acd3a7fb4129 ;
+    pq:P585 "2016-01-01"^^xsd:date ;
+    pqv:P585 wdv:Timec2016cQc9c0 ;
+    ps:C3005 0.0 ;
+    psn:C3005 wdv:Quantityc0c0c0cD ;
+    psv:C3005 wdv:Quantityc0c0c0cD .
+
+wdv:Quantityc127c0c0cD a wikibase:QuantityValue ;
+    wikibase:quantityAmount 127.0 ;
+    wikibase:quantityNormalized wdv:Quantityc127c0c0cD ;
+    wikibase:quantityUnit wd:D1002 .
+
+wdv:Quantityc12c0c0cD a wikibase:QuantityValue ;
+    wikibase:quantityAmount 12.0 ;
+    wikibase:quantityNormalized wdv:Quantityc12c0c0cD ;
+    wikibase:quantityUnit wd:D1002 .
+
+wdv:Quantityc146c0c0cD a wikibase:QuantityValue ;
+    wikibase:quantityAmount 146.0 ;
+    wikibase:quantityNormalized wdv:Quantityc146c0c0cD ;
+    wikibase:quantityUnit wd:D1002 .
+
+wdv:Quantityc14c0c0cD a wikibase:QuantityValue ;
+    wikibase:quantityAmount 14.0 ;
+    wikibase:quantityNormalized wdv:Quantityc14c0c0cD ;
+    wikibase:quantityUnit wd:D1002 .
+
+wdv:Quantityc20c0c0cD a wikibase:QuantityValue ;
+    wikibase:quantityAmount 20.0 ;
+    wikibase:quantityNormalized wdv:Quantityc20c0c0cD ;
+    wikibase:quantityUnit wd:D1002 .
+
+wdv:Quantityc229c0c0cD a wikibase:QuantityValue ;
+    wikibase:quantityAmount 229.0 ;
+    wikibase:quantityNormalized wdv:Quantityc229c0c0cD ;
+    wikibase:quantityUnit wd:D1002 .
+
+wdv:Quantityc233c0c0cD a wikibase:QuantityValue ;
+    wikibase:quantityAmount 233.0 ;
+    wikibase:quantityNormalized wdv:Quantityc233c0c0cD ;
+    wikibase:quantityUnit wd:D1002 .
+
+wdv:Quantityc23c0c0cD a wikibase:QuantityValue ;
+    wikibase:quantityAmount 23.0 ;
+    wikibase:quantityNormalized wdv:Quantityc23c0c0cD ;
+    wikibase:quantityUnit wd:D1002 .
+
+wdv:Quantityc342c0c0cD a wikibase:QuantityValue ;
+    wikibase:quantityAmount 342.0 ;
+    wikibase:quantityNormalized wdv:Quantityc342c0c0cD ;
+    wikibase:quantityUnit wd:D1002 .
+
+wdv:Quantityc37c0c0cD a wikibase:QuantityValue ;
+    wikibase:quantityAmount 37.0 ;
+    wikibase:quantityNormalized wdv:Quantityc37c0c0cD ;
+    wikibase:quantityUnit wd:D1002 .
+
+wdv:Quantityc3c0c0cD a wikibase:QuantityValue ;
+    wikibase:quantityAmount 3.0 ;
+    wikibase:quantityNormalized wdv:Quantityc3c0c0cD ;
+    wikibase:quantityUnit wd:D1002 .
+
+wdv:Quantityc429c0c0cD a wikibase:QuantityValue ;
+    wikibase:quantityAmount 429.0 ;
+    wikibase:quantityNormalized wdv:Quantityc429c0c0cD ;
+    wikibase:quantityUnit wd:D1002 .
+
+wdv:Quantityc42c0c0cD a wikibase:QuantityValue ;
+    wikibase:quantityAmount 42.0 ;
+    wikibase:quantityNormalized wdv:Quantityc42c0c0cD ;
+    wikibase:quantityUnit wd:D1002 .
+
+wdv:Quantityc50c0c0cD a wikibase:QuantityValue ;
+    wikibase:quantityAmount 50.0 ;
+    wikibase:quantityNormalized wdv:Quantityc50c0c0cD ;
+    wikibase:quantityUnit wd:D1002 .
+
+wdv:Quantityc52c0c0cD a wikibase:QuantityValue ;
+    wikibase:quantityAmount 52.0 ;
+    wikibase:quantityNormalized wdv:Quantityc52c0c0cD ;
+    wikibase:quantityUnit wd:D1002 .
+
+wdv:Quantityc5c0c0cD a wikibase:QuantityValue ;
+    wikibase:quantityAmount 5.0 ;
+    wikibase:quantityNormalized wdv:Quantityc5c0c0cD ;
+    wikibase:quantityUnit wd:D1002 .
+
+wdv:Quantityc613c0c0cD a wikibase:QuantityValue ;
+    wikibase:quantityAmount 613.0 ;
+    wikibase:quantityNormalized wdv:Quantityc613c0c0cD ;
+    wikibase:quantityUnit wd:D1002 .
+
+wdv:Quantityc73c0c0cD a wikibase:QuantityValue ;
+    wikibase:quantityAmount 73.0 ;
+    wikibase:quantityNormalized wdv:Quantityc73c0c0cD ;
+    wikibase:quantityUnit wd:D1002 .
+
+wdv:Quantityc8c0c0cD a wikibase:QuantityValue ;
+    wikibase:quantityAmount 8.0 ;
+    wikibase:quantityNormalized wdv:Quantityc8c0c0cD ;
+    wikibase:quantityUnit wd:D1002 .
+
+wdv:Quantityc98c0c0cD a wikibase:QuantityValue ;
+    wikibase:quantityAmount 98.0 ;
+    wikibase:quantityNormalized wdv:Quantityc98c0c0cD ;
+    wikibase:quantityUnit wd:D1002 .
+
+wdv:Quantityc1c0c0cD a wikibase:QuantityValue ;
+    wikibase:quantityAmount 1.0 ;
+    wikibase:quantityNormalized wdv:Quantityc1c0c0cD ;
+    wikibase:quantityUnit wd:D1002 .
+
+wd:D1001 a wikibase:Item ;
+    rdfs:label "Wikidata property related to crime"@en ;
+    schema:name "Wikidata property related to crime"@en ;
+    skos:prefLabel "Wikidata property related to crime"@en ;
+    p:P1269 wds:D1001-88bda137-6953-4f6a-b36d-ce88ccc28145 ;
+    p:P279 wds:D1001-ce04653e-cd9d-4512-a3db-62d5e90c88bd .
+
+wdv:Quantityc0c0c0cD a wikibase:QuantityValue ;
+    wikibase:quantityAmount 0.0 ;
+    wikibase:quantityNormalized wdv:Quantityc0c0c0cD ;
+    wikibase:quantityUnit wd:D1002 .
+
+wdref:2e9394f1-5b7e-4327-bd9e-acd3a7fb4129 a wikibase:Reference ;
+    :P248 wd:Q8333 ;
+    :P854 "https://ucr.fbi.gov/crime-in-the-u.s/2016/crime-in-the-u.s.-2016/tables/table-8/table-8-state-cuts/alabama.xls" .
+
+wdv:Timec2016cQc9c0 a wikibase:Time ;
+    wikibase:timeCalendarModel wd:Q1985727 ;
+    wikibase:timePrecision 9 ;
+    wikibase:timeTimezone 0 ;
+    wikibase:timeValue "2016-01-01"^^xsd:date .
+
