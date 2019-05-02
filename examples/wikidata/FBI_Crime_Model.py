@@ -7,6 +7,7 @@ from etk.etk_module import ETKModule
 from etk.wikidata.entity import WDProperty, WDItem
 from etk.wikidata.value import Datatype, Item, TimeValue, Precision, QuantityValue
 from etk.wikidata.statement import WDReference
+from etk.wikidata import serialize_change_record
 from SPARQLWrapper import SPARQLWrapper, JSON
 
 
@@ -408,3 +409,5 @@ if __name__ == "__main__":
 
     res = model.extract_data(2016, ['alabama'])
     model.model_data(res, 'alabama.ttl')
+    with open('changes.tsv', 'w') as fp:
+        serialize_change_record(fp)
