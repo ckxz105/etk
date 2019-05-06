@@ -17,28 +17,42 @@ def run(args):
     tu = TruthyUpdater(args.endpoint, args.dryrun, args.user, args.passwd)
     creator = args.creator
 
-    query = '''
-      DELETE {
-        ?statement ?p1 ?o .
-        ?s ?p2 ?statement
-      } WHERE {
-        ?statement <http://www.isi.edu/etk/createdBy> <%s> .
-        ?statement ?p1 ?o 
-        OPTIONAL { ?s ?p2 ?statement }
-      }
-    ''' % creator
-    tu.update(query)
+    # delete all wdt:CXXX
+    values = ['(wdt:C{})'.format(i) for i in range(3001, 3020)]
 
     query = '''
-      DELETE {
-        ?entity ?p1 ?o .
-        ?s ?p2 ?entity
-      } WHERE {
-        { ?entity a wikibase:Item } UNION { ?entity a wikibase:Property }
-        FILTER NOT EXISTS { ?entity ?p [ wikibase:rank ?rank ] }
-        ?entity ?p1 ?o .
-        OPTIONAL { ?s ?p2 ?entity }
-      }
-    '''
-    tu.update(query)
+    DELETE {
+        ?s ?p ?o
+    }
+    WHERE {
+        VALUES (?p) {
+            %s
+        }
+        ?s ?p ?o
+    }''' % (' '.join(values))
+    try:
+        # print(query)
+        tu.update(query)
+    except:
+        pass
+
+    # delete all wdtn:CXXX
+    values = ['(wdtn:C{})'.format(i) for i in range(3001, 3020)]
+
+    query = '''
+    DELETE {
+        ?s ?p ?o
+    }
+    WHERE {
+        VALUES (?p) {
+            %s
+        }
+        ?s ?p ?o
+    }''' % (' '.join(values))
+    try:
+        # print(query)
+        tu.update(query)
+    except:
+        pass
+
     print('Deletion complete!')
