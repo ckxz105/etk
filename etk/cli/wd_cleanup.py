@@ -17,42 +17,50 @@ def run(args):
     tu = TruthyUpdater(args.endpoint, args.dryrun, args.user, args.passwd)
     creator = args.creator
 
-    # delete all wdt:CXXX
-    values = ['(wdt:C{})'.format(i) for i in range(3001, 3020)]
-
     query = '''
     DELETE {
-        ?s ?p ?o
-    }
-    WHERE {
-        VALUES (?p) {
-            %s
+        ?statement a wikibase:BestRank .
+        ?entity ?wdt ?value .
+        ?entity ?wdtn ?normalValue .
+    } WHERE {
+        ?statement <http://www.isi.edu/etk/createdBy> <%s> ;
+                   a wikibase:BestRank .
+        ?entity ?p ?statement .
+        ?statement ?ps ?value .
+        ?entity ?wdt ?value .
+        FILTER (strStarts(str(?p), "http://www.wikidata.org/prop/") && strStarts(str(?ps), "http://www.wikidata.org/prop/statement/") && strStarts(str(?wdt), "http://www.wikidata.org/prop/direct/"))
+        OPTIONAL {
+            ?entity ?wdtn ?normalValue .
+            ?statement ?psn ?normalValue .
+            FILTER (strStarts(str(?psn), "http://www.wikidata.org/prop/statement/value-normalized/") && strStarts(str(?wdtn), "http://www.wikidata.org/prop/direct-normalized/"))
         }
-        ?s ?p ?o
-    }''' % (' '.join(values))
-    try:
-        # print(query)
-        tu.update(query)
-    except:
-        pass
-
-    # delete all wdtn:CXXX
-    values = ['(wdtn:C{})'.format(i) for i in range(3001, 3020)]
+    }
+    ''' % creator
+    tu.update(query)
 
     query = '''
-    DELETE {
-        ?s ?p ?o
-    }
-    WHERE {
-        VALUES (?p) {
-            %s
-        }
-        ?s ?p ?o
-    }''' % (' '.join(values))
-    try:
-        # print(query)
-        tu.update(query)
-    except:
-        pass
+      DELETE {
+        ?statement ?p1 ?o .
+        ?s ?p2 ?statement
+      } WHERE {
+        ?statement <http://www.isi.edu/etk/createdBy> <%s> .
+        ?statement ?p1 ?o 
+        OPTIONAL { ?s ?p2 ?statement }
+      }
+    ''' % creator
+    tu.update(query)
+
+    query = '''
+      DELETE {
+        ?entity ?p1 ?o .
+        ?s ?p2 ?entity
+      } WHERE {
+        { ?entity a wikibase:Item } UNION { ?entity a wikibase:Property }
+        FILTER NOT EXISTS { ?entity ?p [ wikibase:rank ?rank ] }
+        ?entity ?p1 ?o .
+        OPTIONAL { ?s ?p2 ?entity }
+      }
+    '''
+    tu.update(query)
 
     print('Deletion complete!')
