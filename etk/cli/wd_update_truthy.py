@@ -17,7 +17,8 @@ def run(args):
     np_list = []
     with open(args.file) as f:
         for l in f.readlines():
-            if not l: continue
+            if not l:
+                continue
             node, prop = l.strip().split('\t')
             np_list.append((node, prop))
     tu.build_truthy(np_list)
